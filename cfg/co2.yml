@@ -1,0 +1,5 @@
+!species
+    a: 3.640
+    b: 0.04267
+    mm: 44.01
+    spectrum: !include co2_truncated.par

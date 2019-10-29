@@ -1,0 +1,13 @@
+# This yml file represents an all CO2 atmosphere at a uniform 101kPa pressure
+# that extends only 1 km in altitude from the ground.
+species:
+    - &co2 !include co2.yml
+layers:
+    - !layer
+        species_mixture: !mixture
+            - *co2
+            - 1.0
+        pressure: 101000
+        temperature: 300
+        low_altitude_boundary: 0
+        high_altitude_boundary: 1000
